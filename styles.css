@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    border:0;
+    font-family: 'Readex Pro';
+    box-sizing: border-box;
+}
+:root{
+    --dback:rgb(40,40,40);
+    --dtext:rgb(255,0,81);
+    --lback:rgb(255, 255, 255);
+    --ltext: black;
+    --mainBorderColor:rgb(218, 218,218);
+}
+body{
+    width: 80%;
+    margin: 0 auto;
+}
+.header{
+    padding-top:5vh;
+    padding-bottom:5vh;
+
+    display:flex;
+    justify-content: space-evenly;
+    background-color:var(--lback);
+    color:var(--ltext);
+    /**border-radius: 10px;
+    box-shadow: 16px 14px 20px black;**/
+}
+
+.profilePicture img{
+    border-radius: 50%;
+}
+.profilePicture{
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.profileInfo{
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.profileInfo h1{
+    font-size: 4em;
+}
+.profileInfo .content{
+    font-size: 1.4em;
+}
+.button{
+   /** width: 10vw;
+    height:7vh;**/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lback);
+    color:rgb(40, 40, 40);}
+
+    /**box-shadow: 0 0 5px rgb(255, 11, 80), 0 0 25px rgb(255, 11, 80);
+}
+.button:hover{
+     box-shadow: 0 0 5px rgb(255, 11, 80), 0 0 25px rgb(255, 11, 80), 0 0 50px rgb(255, 11, 80), 0 0 100px rgb(255, 11, 80), 0 0 200px rgb(255, 11, 80);
+}**/
+
+.links{
+    margin-top: 3vh;
+    border-radius: 0.5rem;
+    padding-top:4vh;
+    padding-bottom:1vh;
+
+    background-color: var(--lback);
+    /**box-shadow: 16px 14px 20px black;**/
+    display:flex;
+    justify-content: space-evenly;
+    border-top: 1px solid var(--mainBorderColor);
+}
+.links a{
+    text-decoration: none;
+    font-size: 1.4em;
+}
+.links a:visited{
+    color:rgb(40, 40, 40);
+}
+.links a:hover{
+    color:rgb(160, 136, 255);
+}
+
+.qualifications{
+    margin-top: 3vh;
+    border-radius: 0.5rem;
+    background-color: var(--lback);
+    /**box-shadow: 16px 14px 20px black;**/
+    color:var(--ltext);
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top:5vh;
+    padding-bottom:1vh;
+    border-top: 1px solid var(--mainBorderColor);
+}
+.qualifications h2{
+    padding-bottom: 2vh;
+    font-size: 2.8em;
+}
+.qualifications ul{
+    font-size: 1.4em;
+}
+.qualifications li{
+    list-style-type: none;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.Skills{
+    margin-top: 3vh;
+    background-color: var(--lback);
+    border-radius: 0.5rem;
+    border-top: 1px solid var(--mainBorderColor);
+    /**color:rgb(255, 11, 80);**/
+    color:var(--ltext);
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top:5vh;
+    padding-bottom:1vh;
+}
+.Skills h2{
+    padding-bottom: 2vh;
+    font-size: 2.8em;
+}
+#wrapper--techstack__items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 1.4em;
+}
+
+.card--techstack{
+    border: 1px solid /**rgb(255, 11, 80)**/ var(--ltext);;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+}
+.work-history{
+    margin-top: 3vh;
+    border-radius: 0.5rem;
+    background-color: var(--lback);
+    color:var(--ltext);
+    border-top: 1px solid var(--mainBorderColor);
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top:5vh;
+    padding-bottom:1vh;
+    font-size: 1.4em;
+}
+.work-history h2{
+    padding-bottom: 2vh;
+    font-size: 2.8em;
+}
+.line-break{
+    /**background-color: rgb(202, 203, 204);**/
+    background-color: rgb(218, 218,218);
+    height: 2px;
+    width:100%;
+    border-radius: 40px;
+}
+
+.card-work-history{
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+}
+.card-work-history p{
+    padding-bottom: 2vh;
+}
+.projects{
+    margin-top: 3vh;
+    background-color: var(--lback);
+    border-radius: 0.5rem;
+    border-top: 1px solid var(--mainBorderColor);
+    /**color:rgb(255, 11, 80);**/
+    color:var(--ltext);
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top:5vh;
+    padding-bottom:5vh;
+    font-size: 1.4em;
+}
+.projects h2{
+    padding-bottom: 2vh;
+    font-size: 2.8em;
+}
+.card--project{
+    padding: 2vh 0;
+}
+.card--project a{
+    text-decoration: none;
+}
+.card--project a:visited{
+    color:black;
+}
+.card--project a:hover{
+    color:blue;
+}
+footer{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top:5vh;
+    padding-bottom:1vh;
+    margin-top: 1vh;
+    /**background-color: rgb(218, 218,218);**/
+    border-radius:10px;
+    border-top: 1px solid var(--mainBorderColor);
+    font-size: 1.4em;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
